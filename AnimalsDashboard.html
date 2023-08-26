@@ -46,6 +46,16 @@
             { id: 16, name: "Jochen", owner: "Rindt", weight: 20, age: 16}
         ];
 
+        for (let i = 0; i < animals.length; i++) {
+        tableHTML += '<tr>';
+        tableHTML += `<td>${animals[i].id}</td>`;
+        tableHTML += `<td>${animals[i].name}</td>`;
+        tableHTML += `<td>${animals[i].owner}</td>`;
+        tableHTML += `<td>${animals[i].weight}</td>`;
+        tableHTML += `<td>${animals[i].age}</td>`;
+        tableHTML += '</tr>';
+    }
+
 
         
 

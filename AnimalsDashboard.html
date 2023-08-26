@@ -24,13 +24,30 @@
     <div id="animal-table"></div>
 
     <script>
-        let tableHTML = '<table>';
-        tableHTML += '<tr><th>Animal ID</th><th>Animal Name</th><th>Owner Name</th><th>Weight</th><th>Age</th></tr>';
+        let tableHTML = '<table>'; //* Asigns <table> to create tabular data *// 
+        tableHTML += '<tr><th>Animal ID</th><th>Animal Name</th><th>Owner Name</th><th>Weight</th><th>Age</th></tr>'; //* Displays all the table headers per column *// 
 
-        const animals = [
+        const animals = [ //* Displays all data in all 16 rows *//
             { id: 1, name: "Fluffy", owner: "Alice", weight: 12, age: 3 },
-            { id: 2, name: "Max", owner: "Bob", weight: 20, age: 5} 
+            { id: 2, name: "Max", owner: "Bob", weight: 20, age: 5},
+            { id: 3, name: "Michael", owner: "Schumacher", weight: 37, age: 8 },
+            { id: 4, name: "Kimi", owner: "Raikkonen", weight: 15, age: 7},
+            { id: 5, name: "Fernando", owner: "Alonso", weight: 25, age: 12 },
+            { id: 6, name: "Sebastian", owner: "Vettel", weight: 30, age: 14},
+            { id: 7, name: "Juan", owner: "Fangio", weight: 22, age: 11 },
+            { id: 8, name: "Ayrton", owner: "Senna", weight: 20, age: 0.7},
+            { id: 9, name: "Alain", owner: "Prost", weight: 14, age: 0.5 },
+            { id: 10, name: "Niki", owner: "Lauda", weight: 17, age: 0.4},
+            { id: 11, name: "James", owner: "Hunt", weight: 15, age: 0.8 },
+            { id: 12, name: "Jenson", owner: "Button", weight: 26, age: 11},
+            { id: 13, name: "Mika", owner: "Hakkinen", weight: 12, age: 18 },
+            { id: 14, name: "Nigel", owner: "Mansel", weight: 30, age: 27},
+            { id: 15, name: "Emerson", owner: "Fittipaldi", weight: 16, age: 30 },
+            { id: 16, name: "Jochen", owner: "Rindt", weight: 20, age: 16}
         ];
+
+
+        
 
         tableHTML += '</table>';
         document.getElementById('animal-table').innerHTML = tableHTML;
